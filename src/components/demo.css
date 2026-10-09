@@ -1,0 +1,101 @@
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Product Card */
+.card {
+    border: none;
+    border-radius: 18px;
+    background: #fff;
+    padding: 20px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* Card hover */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Product Image */
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 15px;
+    border-radius: 14px;
+    background: #f8f8f8;
+
+    transition: transform 0.30s ease;
+}
+
+/* Image zoom */
+.card:hover img {
+    transform: scale(1.12);
+}
+
+/* Price */
+.card h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #198754;
+    margin-top: 20px;
+    transition: 0.15s;
+}
+
+/* Price animation */
+.card:hover h1 {
+    color: #0d6efd;
+    transform: translateX(5px);
+}
+
+/* Product title */
+.card h4 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #333;
+    margin-top: 10px;
+
+    transition: 0.15s;
+}
+
+/* Title hover */
+.card:hover h4 {
+    color: #0d6efd;
+}
+
+/* Add spacing between cards */
+.mb-4 {
+    margin-bottom: 25px !important;
+}
+
+/* Smooth column animation */
+.col-4 {
+    transition: 0.15s;
+}
+
+
+/* ------------------------ */
+/* RESPONSIVE DESIGN */
+/* ------------------------ */
+
+@media (max-width: 992px) {
+    .col-4 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-4 {
+        width: 100%;
+    }
+
+    .card img {
+        height: 220px !important;
+    }
+}
